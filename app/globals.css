@@ -12,6 +12,8 @@
 	--light-green: #C8F8E4;
 	--font-family: 'Noto Sans', sans-serif;
 	--light-grey: #EBEBEB;
+	--color-text: #3B434E;
+	--color-background: #EBEBEB;
 }
 
 * {
@@ -20,7 +22,13 @@
 	padding: 0;
 }
 
+[data-theme='dark'] {
+	--color-text: white;
+	--color-background: #3B434E;
+}
+
 body {
-	color: var(--black);
-	background-color: #F5F6F8;
+	color: var(--color-text);
+	background-color: var(--color-background);
+	transition: color 0.5s ease, background-color 0.5s ease;
 }

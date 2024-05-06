@@ -2,22 +2,33 @@
 	display: grid;
 	grid-template: ". header header ." auto ". sidebar body ." 1fr "footer footer footer footer" auto / auto 230px minmax(320px, 1200px) auto;
 
-	min-height: 100vh;
+	min-height: 96vh;
 	gap: 0 30px;
-}
-
-.header {
-	grid-area: header;
-
-	display: none;
 }
 
 .sidebar {
 	grid-area: sidebar;
 }
 
+.header {
+	grid-area: header;
+	display: none;
+}
+
 .body {
 	grid-area: body;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.top_menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	width: 100%;
 }
 
 @media (width <=765px) {

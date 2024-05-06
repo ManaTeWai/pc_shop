@@ -1,3 +1,7 @@
 export * from './Footer/Footer'
 export * from './Header/Header'
 export * from './Sidebar/Sidebar'
+export * from './ThemeToggler/ThemeToggler'
+export * from './productCard/productCard'
+export * from './Htag/Htag'
+export * from './P/P'
